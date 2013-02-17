@@ -1,0 +1,4 @@
+<% @posts.each do |entry| %>
+    <a href=<%= entry.url %>><%= entry.title %></a> 更新日:<%= entry.last_updated %><br>
+    <%= entry.description %><br>
+<% end %>
